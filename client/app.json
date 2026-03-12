@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Task Manager",
+    "slug": "task-manager-client",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSUserNotificationUsageDescription": "This app sends reminders when tasks are due."
+      }
+    },
+    "android": {
+      "package": "com.taskmanager.client",
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
